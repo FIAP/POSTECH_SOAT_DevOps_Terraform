@@ -16,7 +16,7 @@ terraform {
   required_version = ">= 1.1.0"
 
   cloud {
-    organization = "DevopsFiap"
+    organization = "DevopsFiapSoat3-G35"
 
     workspaces {
       name = "gh-actions"
@@ -43,7 +43,7 @@ data "aws_ami" "ubuntu" {
     values = ["hvm"]
   }
 
-  owners = ["099720109477"] # Canonical
+  owners = ["471112887467"] # Canonical
 }
 
 resource "aws_instance" "web" {
